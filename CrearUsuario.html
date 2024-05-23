@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Crear Usuario</title>
+    <link rel="stylesheet" href="./stylesGPT.css">
+
+    <style>
+        
+    </style>
+</head>
+<body>
+    <section id="Crear usuario">
+        <form id="form-container" class="formulario needs-validation" novalidate>
+            <form class="row g-3 needs-validation" novalidate></form>
+        <div class="form-container">
+            <h2>Crear usuario</h2>
+            <form action="/submit" method="post">
+                <label for="id">ID:</label>
+                <input type="text" class="form-control " id="id" name="id" required placeholder="autoincrementable">
+
+                <label for="nombre">Nombre:</label>
+                <input type="text" class="form-control " id="nombre" name="nombre" required placeholder="completar nombre">
+
+                <label for="apellido">Apellido:</label>
+                <input type="text" class="form-control " id="apellido" name="apellido" required placeholder="completar Apellido">
+
+                <label for="telefono">Teléfono:</label>
+                <input type="tel" class="form-control " id="telefono" name="telefono" required placeholder="completar telefono">
+
+                <label for="email">Email:</label>
+                <input type="email" class="form-control " id="email" name="email" required placeholder="completar email">
+
+                <div class="mb-3">
+                    <p id="mensajesResultado" class="alert alert-primary "></p>
+                </div>
+
+                <div class="button-group">
+                    <button type="button" id="botonEnviar" >Enviar</button>
+                    <button type="reset" id="BotonBorrar" onclick="location.reload()">Cancelar</button>
+                </div>
+
+                  <div class="mb-3">
+                    <p id="mensajesId" class="text-danger"></p>
+                    <p id="mensajesNombre" class="text-danger"></p>
+                    <p id="mensajesApellido" class="text-danger"></p>
+                    <p id="mensajesTelefono" class="text-danger"></p>
+                    <p id="mensajesEmail" class="text-danger"></p>
+                    <p id="mensajesResultado" class="alert alert-primary "></p>
+                    
+                    
+                   </div>
+                </div>
+            </form>
+        </div>
+    </section>
+<script src="./scripts.js"></script>
+</body>
+</html>
